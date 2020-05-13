@@ -13,22 +13,22 @@ Print the maximum sum of the contiguous sub-array in a separate line for each te
 User Task:
 The task is to complete the function maxSubarraySum() which finds subarray with maximum sum.
 
-Constraints:
-1 ≤ T ≤ 110
-1 ≤ N ≤ 106
--107 ≤ A[i] <= 107
+Constraints: <br>
+1 ≤ T ≤ 110 <br>
+1 ≤ N ≤ 106 <br>
+-107 ≤ A[i] <= 107 <br>
 
 Example:
-Input:
-2
-5
-1 2 3 -2 5
-4
--1 -2 -3 -4
+Input: <br>
+2 <br>
+5 <br>
+1 2 3 -2 5 <br>
+4 <br>
+-1 -2 -3 -4 <br>
 
-Output:
-9
--1
+Output: <br>
+9 <br>
+-1 <br>
 
 """
 
