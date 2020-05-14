@@ -5,29 +5,35 @@
 ### Given sorted array is divided into 3 equal parts and key is comapred to be searched in the part it lies.
 
 ```
-def fourSum(A,n,X):
-    A.sort()
-    res=0
-    for i in range(n):
-        for j in range(i+1,n-2):
-            k=j+1
-            l=n-1
-            while(k<l):
-                if A[i]+A[j]+A[k]+A[l]==X:
-                    res+=1
-                elif A[i]+A[j]+A[k]+A[l]>X:
-                    l-=1
-                else:
-                    k+=1
-    print(res if res>0 else -1)
-    
-for i in range(int(input())):
+def ternarySearch(A,x,l,r):
+    while(l<=r):
+        mid1=l+(r-l)//3
+        mid2=mid1+(r-l)//3
+        if(x==A[mid1]):
+            return mid1
+        if(x==A[mid2]):
+            return mid2
+        if(x<A[mid1]):
+            r=mid1-1
+        elif(x>A[mid1] and x<A[mid2]):
+            l=mid1+1
+            r=mid2-1
+        else:
+            l=mid2+1
+    return -1
+if __name__=="__main__":
     n=int(input())
-    A=[int(i) for i in input().split()]
-    X=int(input())
-    fourSum(A,n,X)            
+    A=list(map(int,input().split()))
+    x=int(input())
+    p=ternarySearch(A,x,0,n-1)
+    if(p>=0):
+        print(f"{x} found at position {p+1}")
+    else:
+        print("Element not found")
+    
             
-            
+        
+                  
 ```
 
 
