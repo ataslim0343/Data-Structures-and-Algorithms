@@ -8,7 +8,7 @@ for t in range(int(input())):
     arr=[int(i) for i in input().split()]
     flag=0
     for i in range(n):
-				#x=arr[i] + k ==>> if k is in array then the pair exist.
+#x=arr[i] + k ==>> if k is in array then the pair exist.
         k=x-arr[i]
         if k in arr and arr.index(k)!=i:
             flag=1
