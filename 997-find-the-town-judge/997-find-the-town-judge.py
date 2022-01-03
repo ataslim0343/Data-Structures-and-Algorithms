@@ -5,6 +5,9 @@ class Solution(object):
         :type trust: List[List[int]]
         :rtype: int
         """
+        
+        
+        
         temp1=[0]*(n+1)
         temp2=[0]*(n+1)
         for i in trust:
@@ -15,5 +18,7 @@ class Solution(object):
                 return i
             
         return -1
+
+ 
         
             
