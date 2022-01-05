@@ -9,9 +9,8 @@ class Solution(object):
         if(x<0):
             return False
         while(x):
-            r=x%10
+            s=s*10+x%10
             x=x//10
-            s=s*10+r
         return s==temp
             
         
