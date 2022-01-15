@@ -20,4 +20,4 @@ class Solution(object):
             return [1]+digits
         else:
             digits[p]+=1
-        return digits
+            return digits
