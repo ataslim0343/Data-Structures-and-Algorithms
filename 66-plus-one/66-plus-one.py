@@ -14,10 +14,9 @@ class Solution(object):
                 digits[i]=0
                 c+=1
             else:
-                p=i
-                break
+                digits[i]+=1
+                return digits
         if(c==n):
             return [1]+digits
-        else:
-            digits[p]+=1
-            return digits
+        
+            
