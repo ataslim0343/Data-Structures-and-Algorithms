@@ -3,6 +3,11 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+
+
+# Time=O(n)
+# Space=O(n)
+
 class Solution(object):
     def reverseList(self, head):
         """
