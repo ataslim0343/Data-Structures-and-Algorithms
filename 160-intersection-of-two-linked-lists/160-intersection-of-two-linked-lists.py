@@ -10,14 +10,29 @@ class Solution(object):
         :type head1, head1: ListNode
         :rtype: ListNode
         """
-        visited=set()
+        n1,n2=0,0
         curr1,curr2=headA,headB
         while(curr1):
-            visited.add(curr1)
+            n1+=1
             curr1=curr1.next
         while(curr2):
-            if curr2 in visited:
-                return curr2
+            n2+=1
             curr2=curr2.next
+        temp1,temp2=headA,headB
+        if(n1>=n2):
+            for i in range(n1-n2):
+                temp1=temp1.next
+            while(temp1!=temp2):
+                temp1=temp1.next
+                temp2=temp2.next
+            return temp1
+        else:
+            for i in range(n2-n1):
+                temp2=temp2.next
+            while(temp1!=temp2):
+                temp1=temp1.next
+                temp2=temp2.next
+            return temp1
         return None
+        
         
