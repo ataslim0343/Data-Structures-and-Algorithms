@@ -11,13 +11,12 @@ class Solution(object):
         :rtype: bool
         """
         curr=head
-        arr=[]
         if(not head or (head and not head.next)):
             return 0
         while(curr):
-            if(curr in arr):
+            if(curr.val=='V'):
                 return 1
-            arr.append(curr)
+            curr.val='V'
             curr=curr.next
         return 0
         
