@@ -10,7 +10,7 @@ class Solution(object):
         :type n: int
         :rtype: ListNode
         """
-        temp=head
+        #Two Pointers Approach
         fast=head
         slow=head
         for i in range(n):
