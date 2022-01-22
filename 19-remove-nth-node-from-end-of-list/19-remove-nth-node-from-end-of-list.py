@@ -10,6 +10,8 @@ class Solution(object):
         :type n: int
         :rtype: ListNode
         """
+
+        # Time Complexity = O(2n)
         temp=head
         c=0
         while(temp):
