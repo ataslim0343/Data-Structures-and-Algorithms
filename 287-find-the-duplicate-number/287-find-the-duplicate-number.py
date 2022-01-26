@@ -6,7 +6,7 @@ class Solution:
             if(nums[j]<0):
                 return j
             else:
-                nums[j]=-nums[j]
+                nums[j]*=-1
                 
             
         
