@@ -1,5 +1,6 @@
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
+        # When array is immutable
         # n=len(nums)
         # for i in range(n):
         #     j=abs(nums[i])
