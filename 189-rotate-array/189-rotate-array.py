@@ -7,5 +7,5 @@ class Solution:
         n=len(nums)
         #take care of the case where k >= len(nums)
         k=k%n
-        nums[:]=nums[-k:]+nums[:-k]
+        nums[:]=nums[n-k:]+nums[:n-k]
         
