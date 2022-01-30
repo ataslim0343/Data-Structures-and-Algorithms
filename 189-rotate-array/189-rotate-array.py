@@ -5,7 +5,7 @@ class Solution:
         
         """
         n=len(nums)
+        #take care of the case where k >= len(nums)
         k=k%n
-        nums[:]=reversed(nums)
-        nums[:k],nums[k:]=reversed(nums[:k]),reversed(nums[k:])
+        nums[:]=nums[-k:]+nums[:-k]
         
