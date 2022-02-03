@@ -10,10 +10,10 @@ class Solution(object):
         res=[]
         for i in range(n):
             p=nums[i]
-            if p in d.keys():
-                res.append(d[p])
+            if target-p in d.keys():
+                res.append(d[target-p])
                 res.append(i)
             else:
-                d[target-p]=i
+                d[p]=i
         return res
         
