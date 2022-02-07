@@ -6,7 +6,7 @@ class Solution:
 #A[i]+A[left]+A[right]=0 ==>> A[left]+A[right] = 0-A[i] ==>> target = 0-A[i]
         for i in range(n-1):
             left=i+1
-            right=n-1
+            right=n-1 
             target=0-nums[i]
             while(left<right):
                 if nums[left]+nums[right]==target:
